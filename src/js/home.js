@@ -37,7 +37,7 @@ const start = async () => {
         // if no user, then redirect to login
         if (error.response.status === 401) {
             //Todo: change once deployed
-            window.location.replace("http://localhost:5500")
+            window.location.replace("https://bugzit.netlify.app")
         }
 
     }
