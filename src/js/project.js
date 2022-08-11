@@ -25,6 +25,14 @@ const start = async () => {
         const { user: { name } } = data;
         userName.textContent = name;
 
+        // logging out the user if user id and status points to logged out
+        const storedUserId = localStorage.getItem('id');
+        const status = localStorage.getItem('status');
+
+        if (status === 'loggedOut' && storedUserId === '') {
+            window.location.replace("https://bugz-it.herokuapp.com")
+        }
+
         // fetch all issue helper
         fetchAllIssuesHelper(searchValue, filterValue.join(','));
 
