@@ -75,7 +75,6 @@ function getProjectID() {
 function searchBarHandler(e) {
     searchValue = e.target.value;
     fetchAllIssuesHelper(searchValue, filterValue.join(','));
-    console.log(searchValue);
 }
 
 // multiple label selector
@@ -94,7 +93,6 @@ function filterBtnHandler(e) {
     if (e.target.classList.contains('filter-btn')) {
         let filterValueHelper = [...filterValue];
         filterValueHelper = filterValueHelper.join(',');
-        console.log("Filter btn clicked :", "Filter value helper :",filterValueHelper, "filtervalue :", filterValue);
         fetchAllIssuesHelper(searchValue, filterValueHelper);
         filterValueHelper = [];
     }
@@ -107,8 +105,6 @@ async function fillLabels() {
         const data = response.data;
         diaplayAllLabels(data);
         displayLabelsInCreateIssueForm(data)
-        //!log
-        console.log(data);
     } catch (error) {
         console.log(error);
     }

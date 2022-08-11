@@ -45,7 +45,7 @@ const fetchAllProjects = async (searchValue, projectStatus) => {
     } catch (error) {
         projectFetchStatus.textContent = 'Projects Fetch Failed';
         projectFetchStatus.classList.add('text-danger');
-        // console.log(error);
+        console.log(error);
     }
 }
 

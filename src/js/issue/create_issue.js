@@ -47,7 +47,7 @@ const createIssue = async (projectId) => {
         if (error.response.status === 401) {
             window.location.reload();
         }
-        // console.log(error);
+        console.log(error);
     }
     
 

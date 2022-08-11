@@ -44,7 +44,7 @@ const closeProject = async () => {
         if (error.response.status === 400 || error.response.status === 404) {
             closeProjectErrorMessage.textContent = error.response.data.message;
         }
-        // console.log(error);
+        console.log(error);
     }
 }
 

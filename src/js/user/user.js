@@ -61,7 +61,7 @@ async function updateUserDetailsFormHandler(e) {
         if (error.response.status === 401) {
             window.location.reload();
         }
-        // console.log(error);
+        console.log(error);
     }
 }
 
@@ -95,7 +95,7 @@ async function updateUserPasswordFormHandler(e) {
         if (error.response.status === 401) {
             window.location.reload();
         }
-        // console.log(error);
+        console.log(error);
     }
 
 }

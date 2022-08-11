@@ -81,7 +81,6 @@ function searchHandlerHelper(e) {
 function projectStatusCheckBoxHandler(e) {
     projectStatus = e.target.checked;
     fetchAllProjects(searchValue, projectStatus);
-    console.log(projectStatus);
 }
 
 // listening to various form and button clicks

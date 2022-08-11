@@ -45,8 +45,6 @@ const displayProjectDetails = async (projectData, projectDetailsContainer, creat
     // setting author id to be used in display all issues
     localStorage.setItem('authorId', authorId);
 
-    console.log(userId, authorId, userId===authorId);
-
     // constructing project details template
     const singleProject = `
             <div>
