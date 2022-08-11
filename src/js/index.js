@@ -16,7 +16,7 @@ const start = async () => {
         //*check if user exists
         if (userId === storedUserId && status === 'loggedIn' && cookie) {
             //Todo: change once deployed
-            window.location.replace('https://bugzit.netlify.app/src/html/home.html');
+            window.location.replace('https://bugz-it.herokuapp.com/src/html/home.html');
         }
     } catch (error) {
         if (error.response.status === 401) {
