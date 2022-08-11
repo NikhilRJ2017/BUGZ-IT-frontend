@@ -21,7 +21,7 @@ export const closeProjectUrl = "https://bugz-it-issue-tracker.herokuapp.com/api/
 //************************* Issues urls **************************/
 export const getAllIssuesBaseUrl = "https://bugz-it-issue-tracker.herokuapp.com/api/v1/issue";
 export const createIssueUrl = "https://bugz-it-issue-tracker.herokuapp.com/api/v1/issue";
-export const getAllLabels = "https://bugz-it-issue-tracker.herokuapp.com/v1/issue/get_labels";
+export const getAllLabels = "https://bugz-it-issue-tracker.herokuapp.com/api/v1/issue/get_labels";
 
 //********************************** LOCAL TEST URLS ***************************/
 
