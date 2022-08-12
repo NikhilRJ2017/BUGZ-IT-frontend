@@ -45,7 +45,8 @@ const start = async () => {
         // if no user, then redirect to login
         if (error.response.status === 401) {
             //Todo: change once deployed
-            window.location.replace("https://bugz-it.herokuapp.com")
+            // window.location.replace("https://bugz-it.herokuapp.com")
+            window.location.replace("https://bugz-it.netlify.app")
         }
 
     }

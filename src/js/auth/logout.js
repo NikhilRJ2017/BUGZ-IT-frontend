@@ -23,7 +23,7 @@ const logout = async () => {
 
             // redirecting to login/register page
             //Todo: change while deployment
-            window.location.replace('https://bugz-it.herokuapp.com');
+            window.location.replace('https://bugz-it.netlify.app');
         }
         
     } catch (error) {
